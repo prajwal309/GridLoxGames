@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable 5x5 Board</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+            cursor: pointer; /* Make cursor pointer to indicate clickable cells */
+        }
+    </style>
+    <script>
+        function cellClicked(row, col) {
+            alert("Cell clicked: Row " + row + ", Column " + col);
+        }
+    </script>
+</head>
+<body>
+
+    <table>
+        <!-- Loop to create rows -->
+        <tbody>
+            <tr>
+                <td onclick="cellClicked(1, 1)"></td>
+                <td onclick="cellClicked(1, 2)"></td>
+                <td onclick="cellClicked(1, 3)"></td>
+                <td onclick="cellClicked(1, 4)"></td>
+                <td onclick="cellClicked(1, 5)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClicked(2, 1)"></td>
+                <td onclick="cellClicked(2, 2)"></td>
+                <td onclick="cellClicked(2, 3)"></td>
+                <td onclick="cellClicked(2, 4)"></td>
+                <td onclick="cellClicked(2, 5)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClicked(3, 1)"></td>
+                <td onclick="cellClicked(3, 2)"></td>
+                <td onclick="cellClicked(3, 3)"></td>
+                <td onclick="cellClicked(3, 4)"></td>
+                <td onclick="cellClicked(3, 5)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClicked(4, 1)"></td>
+                <td onclick="cellClicked(4, 2)"></td>
+                <td onclick="cellClicked(4, 3)"></td>
+                <td onclick="cellClicked(4, 4)"></td>
+                <td onclick="cellClicked(4, 5)"></td>
+            </tr>
+            <tr>
+                <td onclick="cellClicked(5, 1)"></td>
+                <td onclick="cellClicked(5, 2)"></td>
+                <td onclick="cellClicked(5, 3)"></td>
+                <td onclick="cellClicked(5, 4)"></td>
+                <td onclick="cellClicked(5, 5)"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

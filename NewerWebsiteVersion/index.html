@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridlock Game</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f5f5f5;
+            color: blue;
+            font-size: 20;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #222;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px); /* Take up full height minus navbar */
+            padding: 20px;
+        }
+
+        /* Gridlock game container */
+        .game-board {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 450px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        .game-cell {
+            background-color: #ddd;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Times;
+        }
+
+        .game-cell:hover {
+            background-color: #ccc;
+        }
+
+        /* Footer (optional) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Gridlock Game</h1>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="game.html">Play</a></li>
+            <li><a href="play.html">Analysis</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="game-board">
+            <!-- Game cells (for a 3x3 grid) -->
+            <div class="game-cell">1+0</div>
+            <div class="game-cell">3+2</div>
+            <div class="game-cell">5+5</div>
+            <div class="game-cell">10+0</div>
+            <div class="game-cell">10+10</div>
+            <div class="game-cell">30+10</div>
+        </div>
+    </div>
+
+    <div class="flag-container">
+        <div class="flag"></div>
+    </div>
+
+
+    <!-- Footer (optional) -->
+    <footer>
+        <p>&copy; 2024 Gridlock Game | All rights reserved</p>
+    </footer>
+
+</body>
+</html>

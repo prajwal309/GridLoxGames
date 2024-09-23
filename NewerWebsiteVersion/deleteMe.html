@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagh Chal - 5x5 Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-template-rows: repeat(5, 100px);
+            gap: 5px;
+            padding: 10px;
+            background-color: #333;
+            border: 5px solid #000;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            border: 2px solid #000;
+            transition: background-color 0.2s ease;
+        }
+
+        .grid-item:hover {
+            background-color: #ddd;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="grid-container" id="grid">
+        <!-- 5x5 grid items will be generated dynamically in JavaScript -->
+    </div>
+
+    <script>
+        // Initialize the grid
+        const gridContainer = document.getElementById('grid');
+
+        // Function to create the 5x5 grid
+        function createGrid() {
+            for (let i = 0; i < 25; i++) {
+                const gridItem = document.createElement('div');
+                gridItem.classList.add('grid-item');
+                gridItem.setAttribute('id', 'cell-' + i); // Assign unique ID for each cell
+
+                // Add click event listener
+                gridItem.addEventListener('click', function() {
+                    handleClick(i);
+                });
+
+                // Add the grid item to the container
+                gridContainer.appendChild(gridItem);
+            }
+        }
+
+        // Function to handle grid item click
+        function handleClick(index) {
+            alert('You clicked on cell ' + index);
+            // Here, you can add logic for Bagchal game, such as placing tigers or goats
+        }
+
+        // Create the grid when the page loads
+        createGrid();
+    </script>
+
+</body>
+</html>

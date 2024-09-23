@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagchal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript/game.js" defer> </script>
+    
+</head>
+<body>
+
+    
+    <nav>
+        <h1>Gridlock Game</h1>
+        <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="game.html">Play</a></li>
+            <li><a href="play.html">Analysis</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="PlayerTurnText">Goat's Turn</div>
+    <div id="PlayerCount">Tiger: 4 | Goat: 0 | Dead Goat: 0</div>
+        
+    <div id="SoundImage">
+    <img src="images/speaker.jpg" onclick="SwitchSound(this.id)" width="25" height="25" id="SpeakerPic"></li>
+    </div>
+    <canvas id="board">You browser does not support HTML5</canvas>
+
+    <div class="Locations">
+        <button class="ClickPosition" id="Box00" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box01" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box02" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box03" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box04" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box05" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box06" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box07" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box08" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box09" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box10" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box11" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box12" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box13" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box14" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box15" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box16" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box17" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box18" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box19" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box20" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box21" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box22" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box23" onclick="GamePlay(this.id)"></button>
+        <button class="ClickPosition" id="Box24" onclick="GamePlay(this.id)"></button>
+     </div>
+    
+</body>
+</html>

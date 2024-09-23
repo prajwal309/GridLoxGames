@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .profile-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profile-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-right: 20px;
+        }
+        .profile-info {
+            flex-grow: 1;
+        }
+        .profile-info h2 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .profile-info p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .stats-section {
+            margin-bottom: 20px;
+        }
+        .stats-section h3 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            color: #333;
+        }
+        .stats-section .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+        .stats-section .stat {
+            text-align: center;
+        }
+        .stat h4 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .stat p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .recent-games {
+            margin-bottom: 20px;
+        }
+        .recent-games table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .recent-games table th, .recent-games table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .recent-games table th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-avatar"></div>
+            <div class="profile-info">
+                <h2>John Doe</h2>
+                <p>Chess Master</p>
+                <p>Rating: 2450</p>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <h3>Game Statistics</h3>
+            <div class="stats">
+                <div class="stat">
+                    <h4>150</h4>
+                    <p>Wins</p>
+                </div>
+                <div class="stat">
+                    <h4>50</h4>
+                    <p>Losses</p>
+                </div>
+                <div class="stat">
+                    <h4>20</h4>
+                    <p>Draws</p>
+                </div>
+                <div class="stat">
+                    <h4>75%</h4>
+                    <p>Win Rate</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Games Section -->
+        <div class="recent-games">
+            <h3>Recent Games</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Opponent</th>
+                        <th>Result</th>
+                        <th>Moves</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-09-01</td>
+                        <td>Alice</td>
+                        <td>Win</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-28</td>
+                        <td>Bob</td>
+                        <td>Loss</td>
+                        <td>38</td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-25</td>
+                        <td>Charlie</td>
+                        <td>Draw</td>
+                        <td>42</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>&copy; 2024 Gridlox Games | All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
